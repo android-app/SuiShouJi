@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:baiduadsdk="http://schemas.android.com/apk/res/com.wuxl.example.suishouji"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/titlebar" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/titlebar" />
+
+    <ProgressBar
+        android:id="@+id/mProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="52dip"
+        android:indeterminateDrawable="@drawable/progress_rotate" />
+
+   <!--  <com.baidu.mobads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        baiduadsdk:adId="debug_m0000001"
+        baiduadsdk:adSize="0" /> -->
+    <!-- 注： baiduadsdk:adId可以指定为"",表示默认广告位 -->
+
+    <RelativeLayout
+        android:id="@+id/adcontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e1e1e1" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bottom_bar" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/klmh"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+            android:text="@string/title_activity_main"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnRight"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/imgwrite"
+            android:gravity="center"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/titlebar" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="460dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/bg_write_sel"
+                android:gravity="top"
+                android:hint="@string/write_here" >
+            </EditText>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

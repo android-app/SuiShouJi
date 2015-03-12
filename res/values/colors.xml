@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="listselector">#ffffff</color>
+    <color name="cacheColor">#e1e1e1</color>
+    <color name="myColor">#cfcfcf</color>
+    <color name="main_background_selected">#ffffffff</color>
+    <color name="main_background_unselected">#ff7a7a7a</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_num_gray">#333</color>
+    <color name="dialog_title_blue">#9CCCF7</color>
+</resources>

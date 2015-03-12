@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/itemWeiyan"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_below="@id/titlebar"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip" >
+
+        <RelativeLayout
+            android:id="@+id/relativeWeiyan"
+            android:layout_width="wrap_content"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/list_bg" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/point" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/weiyan"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_marginRight="-15dip"
+            android:layout_toLeftOf="@id/relativeWeiyan"
+            android:background="@drawable/right_item" >
+
+            <ImageView
+                android:id="@+id/logoWeiyan"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_alignTop="@+id/logoLayout"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/logo_weiyan" />
+
+            <LinearLayout
+                android:id="@+id/logoLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/logoWeiyan"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:text="微言"
+                    android:textColor="#000000"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="汇集经典语录，娱乐励志你我"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/itemSuishouji"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_below="@id/itemWeiyan"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/relativeSuishouji"
+            android:layout_width="wrap_content"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/list_bg" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/point" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/suishouji"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_marginRight="-15dip"
+            android:layout_toLeftOf="@id/relativeSuishouji"
+            android:background="@drawable/right_item" >
+
+            <ImageView
+                android:id="@+id/logoSuishouji"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_alignTop="@+id/logoLayout"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/logo_suishouji" />
+
+            <LinearLayout
+                android:id="@+id/logoLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/logoSuishouji"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:text="随手记"
+                    android:textColor="#000000"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="头脑风暴、随时记录、随处分享"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- wifidebug -->
+
+    <RelativeLayout
+        android:id="@+id/itemWifidebug"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_below="@id/itemSuishouji"
+        android:layout_marginLeft="10dip"
+        android:visibility="gone"
+        android:layout_marginRight="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/relativeWifidebug"
+            android:layout_width="wrap_content"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="90dip"
+                android:background="@drawable/list_bg" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/point" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wifidebug"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_marginRight="-15dip"
+            android:layout_toLeftOf="@id/relativeWifidebug"
+            android:background="@drawable/right_item" >
+
+            <ImageView
+                android:id="@+id/logoWifidebug"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_alignTop="@+id/logoLayout"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/logo_wifidebug" />
+
+            <LinearLayout
+                android:id="@+id/logoLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/logoWifidebug"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:text="WIFi调试"
+                    android:textColor="#000000"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无需数据线也可进行调试"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
